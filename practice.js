@@ -1,19 +1,6 @@
-let user = {
-  firstName : " ",
-  lastName : " ",
- set first(value){
-    this.firstName = value.toUpperCase();
-  },
-set last(value){
-  this.lastName = value.toUpperCase();
-},
-get fullName(){
-  return this.firstName+ " " +this.lastName;
-}
-};
-
-
-user.first = 'jakub';
-user.last = 'flanderka';
-
-console.log(user.fullName)
+const numbers = [1, 2, 3, 4, 5]; 
+ 
+const bigNumbers = numbers.foreach(number => {
+  return number * 10;
+});
+console.log(bigNumbers)
